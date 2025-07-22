@@ -14,17 +14,23 @@ country = st.sidebar.selectbox("Choose a country", ["France", "Germany", "Spain"
 
 # Load the appropriate dataset
 @st.cache_data
-def load_data():
-    france = pd.read_csv("france_df.csv")
-    france.drop(columns=['Unnamed: 0','RowNumber'],inplace=True)
-    germany = pd.read_csv("germany_df.csv")
-    germany.drop(columns=['Unnamed: 0','RowNumber'],inplace=True)
-    spain = pd.read_csv("spain_df.csv")
-    spain.drop(columns=['Unnamed: 0','RowNumber'],inplace=True)
-    return {"France": france, "Germany": germany, "Spain": spain}
+def load_country_data(selected_country):
+    """Loads and caches data for a single country."""
+    file_map = {
+        "France": "france_df.csv",
+        "Germany": "germany_df.csv",
+        "Spain": "spain_df.csv"
+    }
+    df = pd.read_csv(file_map[selected_country])
+    # Drop columns that are consistently present
+    cols_to_drop = ['Unnamed: 0', 'RowNumber']
+    df = df.drop(columns=[col for col in cols_to_drop if col in df.columns])
+    return df
 
-data = load_data()
-df = data[country]
+# In your main script, call the function with the selected country
+country = st.sidebar.selectbox("Choose a country", ["France", "Germany", "Spain"])
+df = load_country_data(country)
+
 
 # Optional: Rename churn column if needed
 if 'Exited' not in df.columns:
