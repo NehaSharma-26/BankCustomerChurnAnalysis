@@ -8,10 +8,6 @@ st.set_page_config(page_title="Bank Customer Churn Dashboard", layout="wide")
 # Title
 st.title("🏦 Bank Customer Churn Dashboard")
 
-# Sidebar for Country Selection
-st.sidebar.title("Select Country")
-country = st.sidebar.selectbox("Choose a country", ["France", "Germany", "Spain"])
-
 # Load the appropriate dataset
 @st.cache_data
 def load_country_data(selected_country):
