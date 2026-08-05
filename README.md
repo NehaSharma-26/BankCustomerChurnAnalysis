@@ -70,6 +70,29 @@ An interactive Power BI dashboard (2 pages) accompanies this analysis:
 - Use the Random Forest model to flag at-risk customers for proactive retention campaigns.
 - Treat "Complain" as a lagging indicator, not a predictive one — act on the leading indicators (product count, activity, balance) instead.
 
+
+## ▶️ How to Run
+
+1. Clone this repository.
+
+```bash
+git clone https://github.com/NehaSharma-26/BankCustomerChurnAnalysis.git
+```
+
+2. Open `BankCustomerChurnAnalysis.ipynb` using **Google Colab** or **Jupyter Notebook**.
+
+3. Load the dataset from the `data/` folder.
+
+4. Run all notebook cells in sequence to perform:
+   - Data Cleaning
+   - Exploratory Data Analysis (EDA)
+   - Statistical Testing
+   - Machine Learning Model Training & Evaluation
+
+5. Open `Bank_Churn_Analysis_Dashboard.pbix` in **Power BI Desktop** to explore the interactive dashboard.
+
+6. If Power BI Desktop is unavailable, view `Bank_Churn_Analysis_Dashboard.pdf` for a static dashboard preview.
+
 ## 📁 Repository Structure
 
 ```
