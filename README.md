@@ -47,6 +47,16 @@ An interactive Power BI dashboard (2 pages) accompanies this analysis:
 
 📄 See `Bank_Churn_Analysis_Dashboard.pdf` for a static preview, or open `Bank_Churn_Analysis_Dashboard.pbix` in Power BI Desktop for the interactive version.
 
+### Dashboard Preview
+
+#### 📄 Page 1 – Executive Overview
+
+![Dashboard Page 1](dashboard_page1.png)
+
+#### 📄 Page 2 – Customer Risk Analysis
+
+![Dashboard Page 2](dashboard_page2.png)
+
 ## 🛠️ Tools Used
 
 - **Python (Google Colab):** Data cleaning, EDA, statistical testing, machine learning (Random Forest, Logistic Regression)
