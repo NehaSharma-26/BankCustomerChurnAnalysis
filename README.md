@@ -63,8 +63,8 @@ An interactive Power BI dashboard (2 pages) accompanies this analysis:
 ## 📁 Repository Structure
 
 ```
-├── data/                                    # Raw and cleaned datasets
-├── BankCustomerChurnAnalysis.ipynb          # Full analysis notebook (EDA, stats tests, modeling)
+├── data/                                     # Raw and cleaned datasets
+├── BankCustomerChurnAnalysis.ipynb           # Full analysis notebook (EDA, stats tests, modeling)
 ├── Bank_Churn_Analysis_Dashboard.pbix        # Power BI dashboard file
 ├── Bank_Churn_Analysis_Dashboard.pdf         # Dashboard PDF preview
 └── README.md
